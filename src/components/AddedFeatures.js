@@ -3,7 +3,8 @@ import React from 'react';
 import AddedFeature from './AddedFeature';
 
 const AddedFeatures = props => {
-  return (
+  console.log("addedfeatures: ",props); //is getting the car state and the empty features array
+    return (
     <div className="content">
       <h6>Added features:</h6>
       {props.car.features.length ? (
@@ -20,3 +21,4 @@ const AddedFeatures = props => {
 };
 
 export default AddedFeatures;
+//props.car.features.length
