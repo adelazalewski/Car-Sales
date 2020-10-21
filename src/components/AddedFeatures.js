@@ -26,4 +26,3 @@ const mapStateToProps = (state) => {
 }
 
 export default connect(mapStateToProps) (AddedFeatures);
-//props.car.features.length

@@ -1,6 +1,7 @@
 import React from 'react';
 import {connect} from "react-redux";
 
+
 const Header = props => {
   console.log(props);
   return (
@@ -17,7 +18,7 @@ const Header = props => {
 };
 
 const mapStateToProps = (state) =>  { 
-  // console.log(state); is saying undefined
+  
   return {
   image: state.car.image,
   name: state.car.name,

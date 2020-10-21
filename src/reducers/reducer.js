@@ -27,7 +27,8 @@ switch(action.type) {
     case "REMOVE_FEATURE":
         return {
             ...state,
-            car: {...state.car,features: state.car.features.filter((feature) => feature.id !== action.payload) }
+            car: {...state.car,features: state.car.features.filter((feature) => feature.id !== action.payload)},
+             additionalPrice: action.payload.price
         }
     default:
       return state;
