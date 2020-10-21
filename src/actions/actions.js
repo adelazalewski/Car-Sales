@@ -1,6 +1,7 @@
-export const addFeature = () => {
-    return {type: "ADD_FEATURE"}
+export const addFeature = (feature) => dispatch => {
+    console.log("the add function is working");
+    return dispatch({type: "ADD_FEATURE", payload: feature})
 }
-export const removeFeature = (id) => {
-    return {type: "REMOVE_FEATURE", payload: id}
+export const removeFeature = (id) => dispatch => {
+    return dispatch({type: "REMOVE_FEATURE", payload: id})
 }

@@ -20,13 +20,16 @@ switch(action.type) {
     case "ADD_FEATURE":
         return{
             ...state,
-            features: state.additionalFeatures.map((feature) => [...state.car.features, feature]),
-            additionalPrice: state.additionalFeatures.price
+            car: {...state.car, features:[...state.car.features, action.payload]},
+            
+            additionalPrice: action.payload.price
         } 
     case "REMOVE_FEATURE":
         return {
             ...state,
-            features: state.features.filter((feature) => feature.id !== action.payload)
+            car: {...state.car,features: state.car.features.filter((feature) => feature.id !== action.payload) }
         }
+    default:
+      return state;
 }
 }
