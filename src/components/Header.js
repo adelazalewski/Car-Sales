@@ -25,7 +25,7 @@ const mapStateToProps = (state) =>  {
   price: state.car.price
 } 
 };
-const mapDispatchToProps = {};
+
 export default connect(mapStateToProps)(Header);
 //export default Header;
 // connect(mapStateToProps, mapDispatchToProps)(

@@ -22,6 +22,6 @@ const mapStateToProps = (state) => {
   }
   
 }
-const mapDispatchToState = {addFeature};
+
 
 export default connect(mapStateToProps,{addFeature})(AdditionalFeature);
